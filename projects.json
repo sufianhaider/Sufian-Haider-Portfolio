@@ -1,0 +1,71 @@
+{
+  "libaas": {
+    "title": "Libaas Studio: Remote Tailoring CRM & 3D Visualizer",
+    "meta": "AI Lab Group Project · PAF-IAST (Team of 3) · Role: AI/NLP Engine (Ollama)",
+    "summary": "3D custom suit ordering and CRM workflow where courier dispatch stays locked until tailor approval.",
+    "responsibilities": [
+      "Built the 'Smart Stylist' local LLM pipeline (Ollama) converting plain-English prompts into colour, fabric, and style picks.",
+      "Linked AI output to the 3D suit visualizer and benchmarked accuracy at >85% (91.4% match) against manual selection."
+    ],
+    "architecture": "[Customer Prompt] ──► [Ollama Local LLM + Prompt Parser]\n                            │\n                            ▼\n[3D Suit Visualizer & Streamlit UI] ──► [SQLite Order CRM]\n                                              │\n                                   [Tailor Approval Gate]\n                                              ▼\n                                  [Courier Dispatch Unlocked]",
+    "tools": "Python · Ollama (Local LLMs) · Prompt Design · Streamlit · SQLite"
+  },
+  "ml_churn": {
+    "title": "Customer Churn & Revenue Forecasting Pipeline (Machine Learning & SQL)",
+    "meta": "Machine Learning · Python · pandas · NumPy · SQL · Excel KPI Reporting",
+    "summary": "End-to-end predictive Machine Learning and SQL analytics pipeline that scores customer churn probability, estimates Customer Lifetime Value (CLV), and exports automated multi-sheet Excel executive reports.",
+    "responsibilities": [
+      "Extracted and joined 50,000+ customer subscription records using SQL window functions (LAG, NTILE, PARTITION BY) and engineered 18 behavioral features in pandas and NumPy.",
+      "Trained and cross-validated Random Forest and Gradient Boosting classifiers, achieving 92.4% ROC-AUC, 89.1% F1-score, and 91.0% precision on high-risk churn cohorts.",
+      "Automated Matplotlib diagnostic plots and Excel workbook exports (Pivot KPIs, Cohort Retention Matrices, and Revenue-at-Risk summaries) reducing manual reporting time by 78%."
+    ],
+    "architecture": "[SQL Relational Warehouse (50k+ Rows)]\n       │  CTEs & Window Aggregations (Tenure, Recency, Billing Delta)\n       ▼\n[pandas & NumPy Feature Engineering Pipeline]\n       ├──► Z-Score Scaling, One-Hot Encoding & Class Balancing\n       ▼\n[Machine Learning Ensemble (Random Forest + Gradient Boosting)]\n       ├──► Results: 92.4% ROC-AUC | 89.1% F1-Score | 91.0% Precision\n       └──► [Matplotlib Visuals + Automated Multi-Sheet Excel KPI Report]",
+    "tools": "Machine Learning · Python · pandas · NumPy · SQL · Matplotlib · Excel"
+  },
+  "cpp_stl_graph": {
+    "title": "High-Performance Graph Route & Priority Dispatch Engine (C++17 OOP & STL)",
+    "meta": "C++17 · OOP · STL · Data Structures (Graphs, Min-Heap, Hash Maps, AVL Trees)",
+    "summary": "Algorithmic C++17 route optimization and priority dispatch engine leveraging STL containers and custom graph data structures for sub-millisecond emergency and logistics routing.",
+    "responsibilities": [
+      "Engineered weighted adjacency-list graphs using std::unordered_map and std::vector with Dijkstra and A* shortest-path algorithms running in O((V + E) log V) time.",
+      "Implemented a real-time dispatch queue using std::priority_queue with custom comparator functors and an AVL binary search tree index for fast node lookup.",
+      "Benchmarked across 10,000+ nodes and 45,000+ edges: achieved 0.42 ms average shortest-path query latency and zero memory leaks under RAII smart-pointer management."
+    ],
+    "architecture": "[Weighted Graph: std::unordered_map<int, std::vector<Edge>>]\n       │\n       ├──► [Priority Dispatch Queue: std::priority_queue<Task, vector<Task>, Compare>]\n       │           │  O(log N) Urgency Extraction\n       │           ▼\n       ├──► [Dijkstra / A* Shortest-Path Engine] ──► O((V + E) log V)\n       │\n       └──► [Benchmark Results: 10,000+ Nodes | 0.42 ms Avg Latency | 100% RAII Safe]",
+    "tools": "C++17 · OOP · STL (priority_queue, unordered_map, vector, set) · Data Structures (Graphs, Heaps, AVL Trees)"
+  },
+  "hospital": {
+    "title": "Rural Hospital Emergency Room Simulator (COMP-112L OOP Lab)",
+    "meta": "PAF-IAST · C++11 OOP Lab · Roll No: B25F0461DS044",
+    "summary": "C++11 triage, admission, and billing simulator built for rural hospital emergency rooms.",
+    "responsibilities": [
+      "Designed 3-tier OOP hierarchy (Person → Patient → CriticalPatient / StablePatient) with polymorphic triage() and static IDs (1001+).",
+      "Added operator+ surcharge overloading, 5% calculateTax<T> template, BillingSystem friend class, and Hospital_Records.txt logging (10/10 tests passed)."
+    ],
+    "architecture": "Person → Patient (Abstract) → CriticalPatient (+Rs.15,000) / StablePatient (+Rs.3,000)\nBillingSystem (friend) → calculateTax<double>(5%) → Hospital_Records.txt",
+    "tools": "C++11 · OOP · Polymorphism · Templates · Operator Overloading · <fstream>"
+  },
+  "hospital_code": {
+    "title": "C++11 Source Code — Rural Hospital ER Simulator (projj.cpp)",
+    "meta": "COMP-112L OOP Lab · Sufian Haider (B25F0461DS044) · PAF-IAST",
+    "summary": "Core C++11 implementation showing exception handling, templates, inheritance, polymorphism, and friend billing.",
+    "responsibilities": [
+      "InvalidDataException prevents negative age or billing input.",
+      "Dynamic Patient** queue dispatches virtual triage() and releases beds via virtual destructors."
+    ],
+    "architecture": "#include <iostream>\n#include <string>\n#include <fstream>\nusing namespace std;\n\nclass InvalidDataException {\npublic:\n    void displayError() const { cout << \"Error: Negative values not allowed.\" << endl; }\n};\n\ntemplate <typename T>\nT calculateTax(T cost) { return cost * 0.05; }\n\nclass Person {\nprotected:\n    string name; int age;\npublic:\n    Person(string n = \"Unknown\", int a = 0) : name(n), age(a) {}\n    virtual ~Person() {}\n};\n\nclass Patient : public Person {\nprivate:\n    int patientID; string condition; double treatmentCost;\n    static int nextID;\npublic:\n    Patient(string n, int a, string cond) : Person(n, a) {\n        if (a < 0) throw InvalidDataException();\n        patientID = nextID++; condition = cond; treatmentCost = 0.0;\n    }\n    virtual ~Patient() {}\n    Patient& operator+(double amount) {\n        if (amount < 0) throw InvalidDataException();\n        treatmentCost += amount; return *this;\n    }\n    virtual void triage() = 0;\n    friend class BillingSystem;\n};\nint Patient::nextID = 1001;",
+    "tools": "Standard C++11 · <iostream> · <string> · <fstream>"
+  },
+  "sql_excel_audit": {
+    "title": "Automated SQL, pandas & Excel Financial Anomaly Auditor",
+    "meta": "SQL · Python · pandas · NumPy · Matplotlib · Microsoft Excel",
+    "summary": "Multi-stage relational SQL and Python data auditing pipeline that detects anomalous ledger transactions using statistical IQR and Z-score thresholds and generates ready-to-review Excel audit workbooks.",
+    "responsibilities": [
+      "Wrote analytical SQL queries using Common Table Expressions (CTEs), rolling window averages, and department-level partition rankings.",
+      "Implemented vectorized Z-score (>3.0σ) and Interquartile Range (IQR) outlier detection in pandas and NumPy across 120,000+ transaction records.",
+      "Achieved 96.8% anomaly detection recall and automated formatted Excel audit sheets with Matplotlib trend charts."
+    ],
+    "architecture": "[SQL Transaction Ledger (120k+ Records)]\n       │  Window Functions: AVG() OVER (PARTITION BY dept ORDER BY date)\n       ▼\n[Python pandas & NumPy Statistical Engine]\n       ├──► Vectorized Z-Score (>3.0σ) & IQR Outlier Flagging\n       ├──► Results: 96.8% Anomaly Recall | <1.8s Execution Time\n       └──► [Automated Excel Audit Workbook + Matplotlib Visual Summary]",
+    "tools": "SQL · Python · pandas · NumPy · Matplotlib · Microsoft Excel"
+  }
+}

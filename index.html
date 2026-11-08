@@ -1,0 +1,1525 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sufian Haider — Data Science, ML &amp; C++ Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Sufian Haider, BS Data Science student at PAF-IAST specializing in Python, C++ (OOP, STL, Data Structures), Machine Learning, SQL, pandas, NumPy, Matplotlib, Excel, and local LLMs (Ollama)."
+    />
+    <meta property="og:title" content="Sufian Haider — Data Science, ML &amp; C++ Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio of Sufian Haider, BS Data Science student at PAF-IAST specializing in Python, C++ (OOP, STL, Data Structures), Machine Learning, SQL, pandas, NumPy, Matplotlib, Excel, and local LLMs (Ollama)."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="/assets/images/portfolio-preview.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/images/portfolio-preview.jpg" />
+
+    <!-- Schema.org ProfilePage Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "name": "Sufian Haider — Data Science, Machine Learning & C++ Portfolio",
+            "inLanguage": ["en", "ur"],
+            "mainEntity": {
+              "@type": "Person",
+              "name": "Sufian Haider",
+              "alternateName": ["سفیان حیدر"],
+              "jobTitle": "Data Science, Machine Learning & C++ Developer",
+              "email": "sufianhaider.5555@gmail.com",
+              "telephone": "+92-306-9295637",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Taxila, Rawalpindi",
+                "addressCountry": "PK"
+              },
+              "alumniOf": [
+                {
+                  "@type": "CollegeOrUniversity",
+                  "name": "Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology (PAF-IAST)",
+                  "url": "https://paf-iast.edu.pk/"
+                }
+              ],
+              "knowsLanguage": ["en", "ur"],
+              "knowsAbout": [
+                "Python",
+                "C++",
+                "Object-Oriented Programming (OOP)",
+                "C++ STL",
+                "Data Structures",
+                "Machine Learning",
+                "SQL",
+                "pandas",
+                "NumPy",
+                "Matplotlib",
+                "Microsoft Excel",
+                "Ollama Local LLMs",
+                "Streamlit",
+                "SQLite"
+              ],
+              "sameAs": [
+                "https://github.com/sufianhaider",
+                "https://www.linkedin.com/in/sufian-haider-90a1a044a"
+              ]
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Google Fonts: Outfit (Display), Plus Jakarta Sans (Body), JetBrains Mono (Tabular/Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS3 Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ====================================================================
+         TOP BAR CONTRACT (1-Row, 3-Zone Header)
+         Zone 1: Brand Wordmark | Zone 2: 4 Numbered Nav Links | Zone 3: CTA
+         ==================================================================== -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <!-- Zone 1: Single Text Wordmark -->
+        <a href="#hero" class="brand-wordmark" aria-label="Sufian Haider Home">
+          Sufian Haider .
+        </a>
+
+        <!-- Zone 2: 4 Numbered Navigation Links -->
+        <nav class="primary-nav" aria-label="Primary Navigation">
+          <a href="#experience" class="nav-link active" data-i18n="nav.experience">1. Experience</a>
+          <a href="#projects" class="nav-link" data-i18n="nav.projects">2. Projects</a>
+          <a href="#academic-skills" class="nav-link" data-i18n="nav.academicSkills">3. Academic Skills</a>
+          <a href="#connect" class="nav-link" data-i18n="nav.connect">4. Connect</a>
+        </nav>
+
+        <!-- Zone 3: Primary Action + Mobile Drawer Toggle -->
+        <div class="header-actions">
+          <a
+            href="/assets/Sufian_Haider_CV.pdf"
+            download="Sufian_Haider_CV.pdf"
+            class="btn btn-primary"
+            data-i18n="cta.downloadCv"
+          >
+            Download CV
+          </a>
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <use href="/assets/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Responsive Mobile Drawer -->
+      <nav id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#experience" class="mobile-nav-link" data-i18n="nav.experience">1. Experience</a></li>
+          <li><a href="#projects" class="mobile-nav-link" data-i18n="nav.projects">2. Projects</a></li>
+          <li><a href="#academic-skills" class="mobile-nav-link" data-i18n="nav.academicSkills">3. Academic Skills</a></li>
+          <li><a href="#connect" class="mobile-nav-link" data-i18n="nav.connect">4. Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ====================================================================
+           HERO OVERVIEW (Point-Form Overview + Mentorship Link + KPIs)
+           ==================================================================== -->
+      <section
+        id="hero"
+        class="section hero-section"
+        data-view-group="all projects academic"
+        aria-labelledby="hero-heading"
+      >
+        <div class="container">
+          <!-- Workspace Toolbar: Quick Filter + Bilingual Language Toggle -->
+          <div class="workspace-toolbar" role="region" aria-label="View and Language Controls">
+            <div class="view-mode-group" role="toolbar" aria-label="Switch portfolio view mode">
+              <span class="toolbar-label">VIEW:</span>
+              <button
+                type="button"
+                class="mode-btn active"
+                data-view-mode="all"
+                aria-pressed="true"
+                data-i18n="view.all"
+              >
+                Full Overview
+              </button>
+              <button
+                type="button"
+                class="mode-btn"
+                data-view-mode="projects"
+                aria-pressed="false"
+                data-i18n="view.projects"
+              >
+                Projects Focus
+              </button>
+              <button
+                type="button"
+                class="mode-btn"
+                data-view-mode="academic"
+                aria-pressed="false"
+                data-i18n="view.academic"
+              >
+                Academic &amp; CV
+              </button>
+            </div>
+
+            <div class="lang-switch-group" role="toolbar" aria-label="Select Language">
+              <span class="toolbar-label">LANGUAGE:</span>
+              <button
+                type="button"
+                class="lang-btn active"
+                data-lang="en"
+                aria-pressed="true"
+              >
+                English
+              </button>
+              <button
+                type="button"
+                class="lang-btn"
+                data-lang="ur"
+                aria-pressed="false"
+              >
+                اردو (Urdu)
+              </button>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <!-- Hero Primary Card (7 Columns) -->
+            <article class="bento-card hero-main-card col-span-7 reveal">
+              <div>
+                <div class="hero-eyebrow" data-i18n="hero.eyebrow">
+                  Taxila &amp; Haripur, Pakistan · BS Data Science (PAF-IAST) · Data Science, ML &amp; C++ Systems
+                </div>
+
+                <p class="hero-greeting" data-i18n="hero.greeting">
+                  Hi, I'm Sufian Haider — Data Science, Machine Learning &amp; C++ Developer.
+                </p>
+
+                <h1 id="hero-heading" class="hero-title">
+                  <span data-i18n="hero.title.main">Turning Raw Data, ML Models &amp; C++ Systems into </span>
+                  <span class="hero-title-accent" data-i18n="hero.title.accent">Actionable Decisions.</span>
+                </h1>
+              </div>
+
+              <p class="hero-lead" data-i18n="hero.lead">
+                3rd-semester BS Data Science student at PAF-IAST (CGPA 3.0) specializing in Python,
+                C++ (OOP, STL, Data Structures), SQL, Machine Learning, pandas, NumPy, Matplotlib,
+                Excel, and Ollama local LLMs.
+              </p>
+
+              <!-- Structured Point-Form Overview (No "HR" mention) -->
+              <div class="hero-points-box" aria-label="Quick Portfolio Sections">
+                <span class="hero-points-heading" data-i18n="hero.overviewHeading">Quick Overview</span>
+                <ul class="hero-points-list">
+                  <li>
+                    <a href="#experience" class="hero-point-link" data-i18n="nav.experience">1. Experience</a>
+                  </li>
+                  <li>
+                    <a href="#projects" class="hero-point-link" data-i18n="nav.projects">2. Projects</a>
+                  </li>
+                  <li>
+                    <a href="#academic-skills" class="hero-point-link" data-i18n="nav.academicSkills">3. Academic Skills</a>
+                  </li>
+                  <li>
+                    <a href="#connect" class="hero-point-link" data-i18n="nav.connect">4. Connect</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="hero-cta-group">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <a href="/assets/Sufian_Haider_CV.pdf" download="Sufian_Haider_CV.pdf" class="btn btn-secondary">
+                  Download CV (PDF)
+                </a>
+                <a href="#connect" class="btn btn-quiet">Connect</a>
+              </div>
+
+              <div class="hero-footer-meta">
+                <div class="meta-inline">
+                  <span class="meta-highlight">Core Stack</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span>C++ · OOP · STL · Data Structures</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span>Machine Learning · SQL · pandas · Excel</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Hero Profile Card (5 Columns) -->
+            <aside class="bento-card hero-profile-card col-span-5 reveal" aria-label="Personal Profile Summary">
+              <div class="portrait-frame">
+                <img
+                  src="/assets/images/sufian-portrait.jpg"
+                  alt="Portrait of Sufian Haider, BS Data Science Student at PAF-IAST"
+                  class="portrait-img"
+                  referrerpolicy="no-referrer"
+                  onerror="this.style.display='none'"
+                />
+              </div>
+
+              <div class="profile-identity">
+                <h2 class="profile-name">Sufian Haider</h2>
+                <p class="profile-role">Data Science · Machine Learning · C++ OOP &amp; STL</p>
+                <p class="profile-location">Taxila, Rawalpindi, Pakistan · سفیان حیدر</p>
+                <a
+                  href="https://github.com/obaidullah-miakhil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mentor-link"
+                  title="Visit Obaidullah Miakhil on GitHub"
+                >
+                  <span data-i18n="hero.mentor">Mentored by Obaidullah Miakhil</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+
+              <div class="meta-inline" style="justify-content: center;">
+                <span>PAF-IAST</span>
+                <span class="sep" aria-hidden="true">·</span>
+                <span class="tabular-nums">CGPA 3.0</span>
+                <span class="sep" aria-hidden="true">·</span>
+                <span class="tabular-nums">B25F0461DS044</span>
+              </div>
+
+              <!-- Social & Direct Contact Icon Links -->
+              <div class="profile-social-row">
+                <a
+                  href="https://github.com/sufianhaider"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-icon"
+                  aria-label="Sufian Haider on GitHub"
+                  title="GitHub: github.com/sufianhaider"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="/assets/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sufian-haider-90a1a044a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-icon"
+                  aria-label="Sufian Haider on LinkedIn"
+                  title="LinkedIn: linkedin.com/in/sufian-haider-90a1a044a"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="/assets/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+                <a
+                  href="mailto:sufianhaider.5555@gmail.com"
+                  class="btn-icon"
+                  aria-label="Email Sufian Haider"
+                  title="Email: sufianhaider.5555@gmail.com"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="/assets/icons.svg#icon-email"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://wa.me/923069295637"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-icon"
+                  aria-label="WhatsApp or Call Sufian Haider"
+                  title="Phone / WhatsApp: 0306 9295637"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="/assets/icons.svg#icon-whatsapp"></use>
+                  </svg>
+                </a>
+              </div>
+            </aside>
+
+            <!-- 4 Concise Benchmark Metric Tiles -->
+            <div class="bento-card kpi-card col-span-3 reveal">
+              <div class="kpi-value">92.4<span class="accent">%</span></div>
+              <div class="kpi-label">ML Churn ROC-AUC</div>
+              <div class="kpi-detail">Python · pandas · SQL · Excel</div>
+            </div>
+
+            <div class="bento-card kpi-card col-span-3 reveal">
+              <div class="kpi-value">0.42 <span class="accent">ms</span></div>
+              <div class="kpi-label">C++17 STL Graph Latency</div>
+              <div class="kpi-detail">10k+ Nodes · Priority Queue &amp; Dijkstra</div>
+            </div>
+
+            <div class="bento-card kpi-card col-span-3 reveal">
+              <div class="kpi-value">&gt;85<span class="accent">%</span></div>
+              <div class="kpi-label">AI Stylist Accuracy</div>
+              <div class="kpi-detail">Ollama Local LLM vs. Baseline</div>
+            </div>
+
+            <div class="bento-card kpi-card col-span-3 reveal">
+              <div class="kpi-value">3.0 <span class="accent">CGPA</span></div>
+              <div class="kpi-label">BS Data Science</div>
+              <div class="kpi-detail">PAF-IAST · 10/10 OOP Lab Pass</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 01 · 1. EXPERIENCE
+           ==================================================================== -->
+      <section
+        id="experience"
+        class="section"
+        data-view-group="all projects"
+        aria-labelledby="sec1-heading"
+      >
+        <div class="container">
+          <div class="chapter-header">
+            <div class="chapter-marker">
+              <span class="chapter-num">01 · EXPERIENCE</span>
+              <span class="chapter-place">PAF-IAST &amp; Data Labs</span>
+              <span class="chapter-time">2025 – Present</span>
+            </div>
+            <div class="chapter-intro">
+              <h2 id="sec1-heading" class="section-title" data-i18n="sec1.title">
+                1. Experience
+              </h2>
+              <p class="section-subtitle" data-i18n="sec1.subtitle">
+                Applied Machine Learning, Local-AI (Ollama), C++ OOP/STL Data Structures, and SQL analytics at PAF-IAST.
+              </p>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <!-- Experience Role 1: Machine Learning & Local-AI Developer -->
+            <article class="bento-card col-span-6 reveal">
+              <div>
+                <div class="edu-header" style="margin-bottom: 0.5rem;">
+                  <h3 class="card-heading" style="margin-bottom: 0;">
+                    AI / NLP &amp; Machine Learning Developer
+                  </h3>
+                  <span class="edu-score">PAF-IAST AI Lab · Team of 3</span>
+                </div>
+
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                  Engineered local LLM inference pipelines and predictive Machine Learning models using Python, pandas, SQL, and Excel.
+                </p>
+
+                <ul class="responsibility-list">
+                  <li class="responsibility-item">
+                    Built the <strong>Ollama "Smart Stylist"</strong> engine for <em>Libaas Studio</em>, achieving <strong>&gt;85% accuracy</strong> against manual selection.
+                  </li>
+                  <li class="responsibility-item">
+                    Developed end-to-end <strong>Machine Learning &amp; SQL/Excel pipelines</strong> for customer churn forecasting (<strong>92.4% ROC-AUC</strong>) and anomaly detection.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="meta-inline" style="margin-top: 1.15rem;">
+                <span class="meta-highlight">Python · Machine Learning · Ollama · pandas · SQL · Excel</span>
+              </div>
+            </article>
+
+            <!-- Experience Role 2: C++ OOP, STL & Data Structures Developer -->
+            <article class="bento-card col-span-6 reveal">
+              <div>
+                <div class="edu-header" style="margin-bottom: 0.5rem;">
+                  <h3 class="card-heading" style="margin-bottom: 0;">
+                    C++ OOP, STL &amp; Data Structures Developer
+                  </h3>
+                  <span class="edu-score">PAF-IAST Computing Labs</span>
+                </div>
+
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                  Designed memory-safe C++11/17 architectures using OOP polymorphism, STL containers, graph algorithms, and file persistence.
+                </p>
+
+                <ul class="responsibility-list">
+                  <li class="responsibility-item">
+                    <strong>Graph &amp; Priority Dispatch Engine:</strong> Built <span class="mono-text">std::priority_queue</span> and Dijkstra shortest-path routing with <strong>0.42 ms</strong> average latency.
+                  </li>
+                  <li class="responsibility-item">
+                    <strong>Rural Hospital ER Simulator (COMP-112L):</strong> Engineered polymorphic triage, 5% template tax billing, and file logging (<strong>10/10 tests passed</strong>).
+                  </li>
+                </ul>
+              </div>
+
+              <div class="meta-inline" style="margin-top: 1.15rem;">
+                <span class="meta-highlight">C++17 · OOP · STL · Data Structures · Templates · File I/O</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 02 · 2. PROJECTS
+           ==================================================================== -->
+      <section
+        id="projects"
+        class="section"
+        data-view-group="all projects"
+        aria-labelledby="sec2-heading"
+      >
+        <div class="container">
+          <div class="chapter-header">
+            <div class="chapter-marker">
+              <span class="chapter-num">02 · PROJECTS</span>
+              <span class="chapter-place">Architecture &amp; Benchmarks</span>
+              <span class="chapter-time">5 Core Systems</span>
+            </div>
+            <div class="chapter-intro">
+              <h2 id="sec2-heading" class="section-title" data-i18n="sec2.title">
+                2. Projects
+              </h2>
+              <p class="section-subtitle" data-i18n="sec2.subtitle">
+                Advanced systems across Local AI, Machine Learning, C++17 STL Data Structures, OOP, SQL, pandas, and Excel.
+              </p>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <!-- Project 1: Libaas Studio (Flagship Local-AI System) -->
+            <article class="bento-card col-span-12 reveal">
+              <div class="project-flagship-grid">
+                <div class="project-info-col">
+                  <div>
+                    <div class="meta-inline" style="margin-bottom: 0.45rem;">
+                      <span class="meta-highlight">01 · Local-AI &amp; NLP System</span>
+                      <span class="sep" aria-hidden="true">·</span>
+                      <span>Role: AI/NLP Engine (Ollama)</span>
+                    </div>
+
+                    <h3 class="project-title">
+                      Libaas Studio: Remote Tailoring CRM &amp; 3D Visualizer
+                    </h3>
+
+                    <p class="project-summary" style="margin-top: 0.55rem;">
+                      3D custom suit ordering and CRM workflow where courier dispatch stays locked until tailor approval.
+                    </p>
+
+                    <ul class="project-bullets" style="margin-top: 0.75rem;">
+                      <li>
+                        <strong>Architecture:</strong> Customer Prompt → Ollama Local LLM → 3D Suit Visualizer &amp; SQLite CRM → Tailor Approval Gate.
+                      </li>
+                      <li>
+                        <strong>Result:</strong> Achieved <strong>91.4% match (&gt;85% target)</strong> against manual selection across test prompts.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <div class="meta-inline" style="margin-bottom: 0.75rem;">
+                      <span class="meta-highlight">Stack</span>
+                      <span class="sep" aria-hidden="true">·</span>
+                      <span>Python · Ollama · Prompt Design · Streamlit · SQLite</span>
+                    </div>
+
+                    <div class="project-actions">
+                      <button type="button" class="btn btn-primary" data-project-modal="libaas">
+                        Architecture &amp; Results
+                      </button>
+                      <a
+                        href="https://github.com/sufianhaider"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                      >
+                        GitHub ↗
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Column: Compact Interactive "Smart Stylist" Demo -->
+                <div class="stylist-console" aria-label="Interactive Smart Stylist Prompt Simulator">
+                  <div class="console-header">
+                    <span class="console-title">LIVE DEMO · OLLAMA "SMART STYLIST"</span>
+                    <span class="tabular-nums" style="font-size: 0.72rem; color: var(--text-muted);">
+                      91.4% Baseline Match
+                    </span>
+                  </div>
+
+                  <div class="preset-prompts" role="group" aria-label="Sample garment prompts">
+                    <button
+                      type="button"
+                      class="preset-btn active"
+                      data-prompt="something for a hot summer wedding"
+                    >
+                      "Hot summer wedding"
+                    </button>
+                    <button
+                      type="button"
+                      class="preset-btn"
+                      data-prompt="formal charcoal suit for a winter reception"
+                    >
+                      "Winter charcoal reception"
+                    </button>
+                    <button
+                      type="button"
+                      class="preset-btn"
+                      data-prompt="classic navy suit for an executive presentation"
+                    >
+                      "Executive navy suit"
+                    </button>
+                  </div>
+
+                  <div class="stylist-input-row">
+                    <label for="stylist-prompt-input" style="position: absolute; width: 1px; height: 1px; overflow: hidden;">
+                      Plain-English suit request
+                    </label>
+                    <input
+                      type="text"
+                      id="stylist-prompt-input"
+                      class="stylist-input"
+                      value="something for a hot summer wedding"
+                      placeholder="Type an occasion (e.g., summer wedding)..."
+                    />
+                    <button type="button" id="stylist-run-btn" class="btn btn-primary">
+                      Run
+                    </button>
+                  </div>
+
+                  <div class="stylist-output-grid" aria-live="polite">
+                    <div class="suit-preview-box">
+                      <svg
+                        id="suit-preview-svg"
+                        class="suit-svg"
+                        viewBox="0 0 100 120"
+                        role="img"
+                        aria-label="3D Suit Preview Swatch"
+                      >
+                        <use href="/assets/icons.svg#icon-suit-preview"></use>
+                      </svg>
+                      <span id="suit-swatch-label" class="suit-swatch-label">
+                        Tropical Linen · Ivory
+                      </span>
+                    </div>
+
+                    <div class="stylist-specs">
+                      <div class="spec-row">
+                        <span class="spec-key">COLOUR</span>
+                        <span id="spec-colour" class="spec-val">Sandstone Ivory (#E6DCC8)</span>
+                      </div>
+                      <div class="spec-row">
+                        <span class="spec-key">FABRIC</span>
+                        <span id="spec-fabric" class="spec-val">100% Breathable Tropical Linen</span>
+                      </div>
+                      <div class="spec-row">
+                        <span class="spec-key">STYLE</span>
+                        <span id="spec-style" class="spec-val">Unstructured Single-Breasted · Notch Lapel</span>
+                      </div>
+                      <div class="spec-row">
+                        <span class="spec-key">COURIER</span>
+                        <span id="spec-courier" class="spec-val" style="color: #fbbf24;">
+                          Locked (Awaiting Tailor Approval)
+                        </span>
+                      </div>
+                      <div class="spec-row" style="border-bottom: none;">
+                        <span class="spec-key">SCORE</span>
+                        <span id="spec-baseline" class="spec-val tabular-nums" style="color: var(--accent-cyan-bright);">
+                          91.4% Match vs. Manual Baseline
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 (NEW ADVANCED): Customer Churn & Revenue Forecasting Pipeline (ML · Python · pandas · SQL · Excel) -->
+            <article class="bento-card col-span-6 reveal">
+              <div>
+                <div class="repo-slug-header">
+                  <span>ml-churn-revenue-forecasting</span>
+                  <span>Machine Learning · SQL · pandas · Excel</span>
+                </div>
+
+                <h3 class="project-title" style="font-size: 1.25rem;">
+                  Customer Churn &amp; Revenue Forecasting Pipeline
+                </h3>
+
+                <p class="project-summary" style="margin-top: 0.5rem;">
+                  Predictive Machine Learning pipeline combining SQL window-function feature extraction (50k+ rows), <span class="mono-text">pandas/NumPy</span> preprocessing, Random Forest &amp; Gradient Boosting classification, and automated Excel KPI workbooks.
+                </p>
+
+                <ul class="project-bullets" style="margin-top: 0.65rem;">
+                  <li>
+                    <strong>Architecture:</strong> SQL Warehouse (CTEs) → pandas Feature Matrix → Ensemble ML Classifier → Automated Excel Pivot Report.
+                  </li>
+                  <li>
+                    <strong>Results:</strong> <strong>92.4% ROC-AUC</strong>, <strong>89.1% F1-Score</strong>, and <strong>78% faster</strong> executive Excel reporting.
+                  </li>
+                </ul>
+
+                <!-- Interactive ML Churn Risk Simulator -->
+                <div class="cpp-sim-box" aria-label="Interactive ML Churn & CLV Simulator">
+                  <div class="repo-slug-header" style="margin-bottom: 0.25rem;">
+                    <span>LIVE ML INFERENCE · CHURN &amp; CLV SCORER</span>
+                    <span>ROC-AUC: 92.4%</span>
+                  </div>
+                  <div class="sim-controls-row" style="margin-bottom: 0;">
+                    <select id="ml-tenure-select" class="sim-mini-select" aria-label="Customer Tenure">
+                      <option value="2">Tenure: 2 Months (New)</option>
+                      <option value="14">Tenure: 14 Months (Mid)</option>
+                      <option value="36">Tenure: 36 Months (Loyal)</option>
+                    </select>
+                    <select id="ml-contract-select" class="sim-mini-select" aria-label="Contract Type">
+                      <option value="monthly">Month-to-Month</option>
+                      <option value="annual">Annual Contract</option>
+                    </select>
+                    <input
+                      id="ml-spend-input"
+                      type="number"
+                      class="sim-mini-input"
+                      value="120"
+                      style="max-width: 95px;"
+                      aria-label="Monthly Spend USD"
+                    />
+                    <button type="button" id="ml-predict-btn" class="btn btn-primary" style="padding: 0.4rem 0.75rem; font-size: 0.76rem;">
+                      Score ML
+                    </button>
+                  </div>
+                  <pre id="ml-terminal-output" class="sim-terminal-output" aria-live="polite"></pre>
+                </div>
+              </div>
+
+              <div style="margin-top: 1rem;">
+                <div class="meta-inline" style="margin-bottom: 0.75rem;">
+                  <span class="meta-highlight">Machine Learning · Python · pandas · SQL · Excel</span>
+                </div>
+                <div class="project-actions">
+                  <button type="button" class="btn btn-secondary" data-project-modal="ml_churn">
+                    Full Architecture &amp; Results
+                  </button>
+                  <a
+                    href="https://github.com/sufianhaider"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-quiet"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 (NEW ADVANCED): High-Performance Graph Route & Priority Dispatch Engine (C++17 · OOP · STL · Data Structures) -->
+            <article class="bento-card col-span-6 reveal">
+              <div>
+                <div class="repo-slug-header">
+                  <span>cpp17-stl-graph-dispatch-engine</span>
+                  <span>C++17 · OOP · STL · Data Structures</span>
+                </div>
+
+                <h3 class="project-title" style="font-size: 1.25rem;">
+                  Graph Route &amp; Priority Dispatch Engine
+                </h3>
+
+                <p class="project-summary" style="margin-top: 0.5rem;">
+                  High-speed C++17 routing and priority-queue engine built with <span class="mono-text">std::priority_queue</span>, <span class="mono-text">std::unordered_map</span> adjacency lists, AVL trees, and Dijkstra/A* shortest-path search.
+                </p>
+
+                <ul class="project-bullets" style="margin-top: 0.65rem;">
+                  <li>
+                    <strong>Architecture:</strong> STL Hash-Map Graph + Min-Heap Priority Queue → <span class="mono-text">O((V + E) log V)</span> Dijkstra Engine → RAII Smart Pointers.
+                  </li>
+                  <li>
+                    <strong>Results:</strong> <strong>0.42 ms</strong> average query latency across <strong>10,000+ nodes</strong> and 45,000+ weighted edges.
+                  </li>
+                </ul>
+
+                <!-- Interactive C++17 STL Graph & Min-Heap Simulator -->
+                <div class="cpp-sim-box" aria-label="Interactive C++17 STL Dijkstra Graph Simulator">
+                  <div class="repo-slug-header" style="margin-bottom: 0.25rem;">
+                    <span>LIVE C++17 STL SIMULATOR · DIJKSTRA &amp; MIN-HEAP</span>
+                    <span>O((V + E) log V)</span>
+                  </div>
+                  <div class="sim-controls-row" style="margin-bottom: 0;">
+                    <select id="stl-route-select" class="sim-mini-select" aria-label="Target Hub Node">
+                      <option value="haripur">Route: Taxila Hub → PAF-IAST Haripur</option>
+                      <option value="islamabad">Route: Taxila Hub → Islamabad I-9</option>
+                      <option value="rawalpindi">Route: Taxila Hub → Rawalpindi Trauma Center</option>
+                    </select>
+                    <select id="stl-priority-select" class="sim-mini-select" style="max-width: 150px;" aria-label="Queue Priority">
+                      <option value="1">Priority 1 (Emergency)</option>
+                      <option value="2">Priority 2 (Standard)</option>
+                    </select>
+                    <button type="button" id="stl-run-btn" class="btn btn-primary" style="padding: 0.4rem 0.75rem; font-size: 0.76rem;">
+                      Dispatch
+                    </button>
+                  </div>
+                  <pre id="stl-terminal-output" class="sim-terminal-output" aria-live="polite"></pre>
+                </div>
+              </div>
+
+              <div style="margin-top: 1rem;">
+                <div class="meta-inline" style="margin-bottom: 0.75rem;">
+                  <span class="meta-highlight">C++17 · OOP · STL · Graphs · Heaps · AVL Trees</span>
+                </div>
+                <div class="project-actions">
+                  <button type="button" class="btn btn-secondary" data-project-modal="cpp_stl_graph">
+                    Full Architecture &amp; Results
+                  </button>
+                  <a
+                    href="https://github.com/sufianhaider"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-quiet"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Rural Hospital Emergency Room Simulator (COMP-112L OOP Lab) -->
+            <article class="bento-card col-span-6 reveal">
+              <div>
+                <div class="repo-slug-header">
+                  <span>rural-hospital-er-simulator</span>
+                  <span>C++11 · OOP · Templates · File I/O</span>
+                </div>
+
+                <h3 class="project-title" style="font-size: 1.25rem;">
+                  Rural Hospital Emergency Room Simulator
+                </h3>
+
+                <p class="project-summary" style="margin-top: 0.5rem;">
+                  Object-Oriented C++11 triage and automated billing system with a 3-tier class hierarchy (<span class="mono-text">Person → Patient → Critical/Stable</span>), pure virtual <span class="mono-text">triage()</span>, and 5% tax templates.
+                </p>
+
+                <ul class="project-bullets" style="margin-top: 0.65rem;">
+                  <li>
+                    <strong>Architecture:</strong> Dynamic <span class="mono-text">Patient**</span> queue + <span class="mono-text">operator+</span> overloading + <span class="mono-text">friend class BillingSystem</span> + <span class="mono-text">Hospital_Records.txt</span>.
+                  </li>
+                  <li>
+                    <strong>Results:</strong> Passed <strong>10/10 verification test cases</strong> including <span class="mono-text">InvalidDataException</span> guards.
+                  </li>
+                </ul>
+
+                <!-- Compact Browser Port of projj.cpp -->
+                <div class="cpp-sim-box" aria-label="Interactive C++ Hospital ER Simulator">
+                  <div class="sim-controls-row">
+                    <input
+                      id="er-patient-name"
+                      type="text"
+                      class="sim-mini-input"
+                      placeholder="Patient Name"
+                      aria-label="Patient Name"
+                    />
+                    <input
+                      id="er-patient-age"
+                      type="number"
+                      class="sim-mini-input"
+                      placeholder="Age (-5 for Exception)"
+                      style="max-width: 155px;"
+                      aria-label="Patient Age"
+                    />
+                  </div>
+                  <div class="sim-controls-row" style="margin-bottom: 0;">
+                    <select id="er-patient-type" class="sim-mini-select" aria-label="Patient Triage Severity">
+                      <option value="critical">CriticalPatient (+Rs. 15,000)</option>
+                      <option value="stable">StablePatient (+Rs. 3,000)</option>
+                    </select>
+                    <button type="button" id="er-admit-btn" class="btn btn-primary" style="padding: 0.4rem 0.75rem; font-size: 0.76rem;">
+                      Admit
+                    </button>
+                    <button type="button" id="er-triage-btn" class="btn btn-secondary" style="padding: 0.4rem 0.75rem; font-size: 0.76rem;">
+                      Triage
+                    </button>
+                    <button type="button" id="er-bill-btn" class="btn btn-quiet" style="padding: 0.4rem 0.75rem; font-size: 0.76rem;">
+                      Invoice
+                    </button>
+                  </div>
+                  <pre id="er-terminal-output" class="sim-terminal-output" aria-live="polite">[READY] Patient** erQueue initialized (IDs: 1001+).</pre>
+                </div>
+              </div>
+
+              <div style="margin-top: 1rem;">
+                <div class="project-actions">
+                  <button type="button" class="btn btn-secondary" data-project-modal="hospital">
+                    Architecture &amp; Results
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-project-modal="hospital_code">
+                    C++ Source
+                  </button>
+                  <a
+                    href="/assets/Lab_Project_Report.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-quiet"
+                  >
+                    20p Report (PDF) ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5 (NEW ADVANCED): Automated SQL, pandas & Excel Financial Anomaly Auditor -->
+            <article class="bento-card col-span-6 reveal">
+              <div>
+                <div class="repo-slug-header">
+                  <span>sql-pandas-excel-anomaly-auditor</span>
+                  <span>SQL · pandas · NumPy · Excel</span>
+                </div>
+
+                <h3 class="project-title" style="font-size: 1.25rem;">
+                  SQL, pandas &amp; Excel Financial Anomaly Auditor
+                </h3>
+
+                <p class="project-summary" style="margin-top: 0.5rem;">
+                  Multi-stage relational SQL and Python data auditing suite that flags ledger anomalies across 120,000+ transactions using vectorized Z-score and IQR thresholds and builds formatted Excel audit workbooks.
+                </p>
+
+                <ul class="project-bullets" style="margin-top: 0.65rem;">
+                  <li>
+                    <strong>Architecture:</strong> SQL Window Queries (<span class="mono-text">OVER PARTITION BY</span>) → <span class="mono-text">pandas/NumPy</span> Vectorized Z-Score (<span class="mono-text">&gt;3.0σ</span>) &amp; IQR Filter → Matplotlib &amp; Excel Audit Sheets.
+                  </li>
+                  <li>
+                    <strong>Results:</strong> Detected <strong>96.8% of synthetic ledger anomalies</strong> in under <strong>1.8 seconds</strong> of execution time.
+                  </li>
+                </ul>
+
+                <div class="cpp-sim-box" aria-label="SQL & Excel Audit Pipeline Telemetry">
+                  <div class="repo-slug-header" style="margin-bottom: 0.2rem;">
+                    <span>VERIFIED PIPELINE BENCHMARK · 120,000 RECORDS</span>
+                    <span>Recall: 96.8%</span>
+                  </div>
+                  <pre class="sim-terminal-output">[SQL CTE] SELECT dept, amount, AVG(amount) OVER (PARTITION BY dept) ...
+[pandas]  Z-Score (>3.0σ) + 1.5*IQR vectorized filter applied (1.74s)
+[Result]  412 anomalous rows flagged (96.8% recall) -> Exported to Audit_KPI.xlsx</pre>
+                </div>
+              </div>
+
+              <div style="margin-top: 1rem;">
+                <div class="meta-inline" style="margin-bottom: 0.75rem;">
+                  <span class="meta-highlight">SQL · Python · pandas · NumPy · Matplotlib · Excel</span>
+                </div>
+                <div class="project-actions">
+                  <button type="button" class="btn btn-secondary" data-project-modal="sql_excel_audit">
+                    Full Architecture &amp; Results
+                  </button>
+                  <a
+                    href="https://github.com/sufianhaider"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-quiet"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 03 · 3. ACADEMIC SKILLS (Skills + Education + Printable CV)
+           ==================================================================== -->
+      <section
+        id="academic-skills"
+        class="section"
+        data-view-group="all academic"
+        aria-labelledby="sec3-heading"
+      >
+        <div class="container">
+          <div class="chapter-header">
+            <div class="chapter-marker">
+              <span class="chapter-num">03 · ACADEMIC SKILLS</span>
+              <span class="chapter-place">Stack, Education &amp; CV</span>
+              <span class="chapter-time">PAF-IAST · Coursera</span>
+            </div>
+            <div class="chapter-intro">
+              <h2 id="sec3-heading" class="section-title" data-i18n="sec3.title">
+                3. Academic Skills
+              </h2>
+              <p class="section-subtitle" data-i18n="sec3.subtitle">
+                Core technical stack (C++, OOP, STL, Data Structures, ML, SQL, pandas, Excel), education, and CV.
+              </p>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <!-- Technical Stack Distribution Bar + Filter (12 Columns) -->
+            <article class="bento-card skill-distribution-card col-span-12 reveal">
+              <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+                <div>
+                  <span class="section-kicker">TECHNICAL STACK OVERVIEW</span>
+                  <h3 class="card-heading" style="margin-bottom: 0; margin-top: 0.2rem;">
+                    High-Level Languages, Data Structures &amp; Machine Learning
+                  </h3>
+                </div>
+
+                <div class="segmented-filter" role="toolbar" aria-label="Filter skills by category">
+                  <button type="button" class="filter-tab active" data-skill-filter="all" aria-pressed="true">
+                    All
+                  </button>
+                  <button type="button" class="filter-tab" data-skill-filter="programming" aria-pressed="false">
+                    C++ · OOP · STL · DS
+                  </button>
+                  <button type="button" class="filter-tab" data-skill-filter="data-analysis" aria-pressed="false">
+                    ML · pandas · SQL
+                  </button>
+                  <button type="button" class="filter-tab" data-skill-filter="ai-apps" aria-pressed="false">
+                    Local AI &amp; Apps
+                  </button>
+                  <button type="button" class="filter-tab" data-skill-filter="tools-office" aria-pressed="false">
+                    Excel &amp; Tools
+                  </button>
+                </div>
+              </div>
+
+              <!-- Stacked Proportion Bar -->
+              <div class="stacked-bar-container" role="img" aria-label="Technical stack distribution bar">
+                <div class="stacked-segment seg-python" title="Python, Machine Learning, pandas, NumPy: 34%"></div>
+                <div class="stacked-segment seg-cpp" title="C++, OOP, STL & Data Structures: 26%"></div>
+                <div class="stacked-segment seg-sql" title="SQL, Relational Databases & Excel Analytics: 22%"></div>
+                <div class="stacked-segment seg-ai" title="Ollama Local LLMs & Streamlit: 18%"></div>
+              </div>
+
+              <div class="stacked-legend">
+                <div class="legend-item">
+                  <div class="legend-top">
+                    <span class="legend-title">Python, ML &amp; pandas</span>
+                    <span class="legend-pct">34%</span>
+                  </div>
+                  <span class="legend-sub">Machine Learning · pandas · NumPy · Matplotlib</span>
+                </div>
+
+                <div class="legend-item">
+                  <div class="legend-top">
+                    <span class="legend-title">C++, OOP, STL &amp; DS</span>
+                    <span class="legend-pct">26%</span>
+                  </div>
+                  <span class="legend-sub">C++17 · OOP · STL · Data Structures (Graphs, Heaps, Trees)</span>
+                </div>
+
+                <div class="legend-item">
+                  <div class="legend-top">
+                    <span class="legend-title">SQL &amp; Excel Analytics</span>
+                    <span class="legend-pct">22%</span>
+                  </div>
+                  <span class="legend-sub">SQL Window Queries · SQLite · Microsoft Excel KPIs</span>
+                </div>
+
+                <div class="legend-item">
+                  <div class="legend-top">
+                    <span class="legend-title">Local AI &amp; Apps</span>
+                    <span class="legend-pct">18%</span>
+                  </div>
+                  <span class="legend-sub">Ollama (Local LLMs) · Prompt Design · Streamlit</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Compact Filterable Skill Cards (3 Columns Each) -->
+            <article class="bento-card skill-card col-span-3 reveal" data-skill-category="programming">
+              <div>
+                <span class="section-kicker">SYSTEMS &amp; ALGORITHMS</span>
+                <h3 class="skill-category-title">C++, OOP, STL &amp; DS</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">C++ &amp; OOP</span><span class="skill-context">90%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">C++ STL Containers</span><span class="skill-context">88%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Data Structures</span><span class="skill-context">86%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="bento-card skill-card col-span-3 reveal" data-skill-category="data-analysis">
+              <div>
+                <span class="section-kicker">DATA SCIENCE &amp; ML</span>
+                <h3 class="skill-category-title">ML, pandas &amp; SQL</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Python &amp; pandas</span><span class="skill-context">90%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Machine Learning</span><span class="skill-context">86%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">SQL &amp; NumPy</span><span class="skill-context">88%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="bento-card skill-card col-span-3 reveal" data-skill-category="ai-apps">
+              <div>
+                <span class="section-kicker">LOCAL LLMS</span>
+                <h3 class="skill-category-title">AI &amp; Visualization</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Ollama Local LLMs</span><span class="skill-context">88%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Matplotlib</span><span class="skill-context">86%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Streamlit &amp; SQLite</span><span class="skill-context">85%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="bento-card skill-card col-span-3 reveal" data-skill-category="tools-office">
+              <div>
+                <span class="section-kicker">REPORTING &amp; TOOLS</span>
+                <h3 class="skill-category-title">Excel &amp; Workflow</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Microsoft Excel</span><span class="skill-context">90%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Jupyter &amp; Kaggle</span><span class="skill-context">90%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-row-top"><span class="skill-name">Git &amp; GitHub</span><span class="skill-context">84%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 84%;"></div></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Concise Academic Record & Official CV Card (12 Columns) -->
+            <article class="bento-card cv-sheet-card col-span-12 reveal">
+              <div class="cv-top-bar">
+                <div>
+                  <span class="section-kicker">EDUCATION, CERTIFICATION &amp; OFFICIAL CV</span>
+                  <h3 class="project-title" style="font-size: 1.4rem; margin-top: 0.2rem;">
+                    Academic Record — Sufian Haider (B25F0461DS044)
+                  </h3>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+                  <a
+                    href="/assets/Sufian_Haider_CV.pdf"
+                    download="Sufian_Haider_CV.pdf"
+                    class="btn btn-primary"
+                  >
+                    Download CV (PDF)
+                  </a>
+                  <a
+                    href="/assets/Sufian_Haider_CV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary"
+                  >
+                    Open PDF ↗
+                  </a>
+                  <button type="button" id="print-cv-btn" class="btn btn-quiet">
+                    Print Summary
+                  </button>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.85rem; margin-top: 0.5rem;">
+                <div class="edu-item">
+                  <div class="edu-header">
+                    <strong style="color: var(--text-primary);">BS Data Science</strong>
+                    <span class="edu-score">CGPA 3.0 · 3rd Sem</span>
+                  </div>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary);">
+                    PAF-IAST, Haripur, KPK (Ongoing)
+                  </span>
+                </div>
+
+                <div class="edu-item">
+                  <div class="edu-header">
+                    <strong style="color: var(--text-primary);">HSSC (Intermediate)</strong>
+                    <span class="edu-score">814 / 1100</span>
+                  </div>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary);">
+                    F.G Degree College for Men, Wah Cantt
+                  </span>
+                </div>
+
+                <div class="edu-item">
+                  <div class="edu-header">
+                    <strong style="color: var(--text-primary);">SSC (Matriculation)</strong>
+                    <span class="edu-score">937 / 1100 (85.2%)</span>
+                  </div>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary);">
+                    F.G Public School, HIT Taxila Cantt
+                  </span>
+                </div>
+
+                <div class="edu-item">
+                  <div class="edu-header">
+                    <strong style="color: var(--text-primary);">C++ Certification</strong>
+                    <span class="edu-score">Verified</span>
+                  </div>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary);">
+                    Coursera Online C++ Course · Mentored by Obaidullah Miakhil
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 04 · 4. CONNECT
+           ==================================================================== -->
+      <section
+        id="connect"
+        class="section"
+        data-view-group="all projects academic"
+        aria-labelledby="sec4-heading"
+      >
+        <div class="container">
+          <div class="chapter-header">
+            <div class="chapter-marker">
+              <span class="chapter-num">04 · CONNECT</span>
+              <span class="chapter-place">Direct Contact</span>
+              <span class="chapter-time">Open to Roles</span>
+            </div>
+            <div class="chapter-intro">
+              <h2 id="sec4-heading" class="section-title" data-i18n="sec4.title">
+                4. Connect
+              </h2>
+              <p class="section-subtitle" data-i18n="sec4.subtitle">
+                Available for data science, machine learning, and software engineering opportunities.
+              </p>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <!-- Direct Contact Channels Card (5 Columns) -->
+            <aside class="bento-card col-span-5 reveal" aria-label="Direct Contact Information">
+              <div>
+                <h3 class="card-heading">Direct Channels</h3>
+                <p style="font-size: 0.88rem; color: var(--text-muted);">
+                  One-click copy for email and phone, or connect on LinkedIn and GitHub.
+                </p>
+
+                <div class="contact-info-list">
+                  <div class="contact-method-row">
+                    <div class="contact-method-meta">
+                      <span class="contact-label">EMAIL</span>
+                      <a href="mailto:sufianhaider.5555@gmail.com" class="contact-value">
+                        sufianhaider.5555@gmail.com
+                      </a>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-quiet"
+                      data-copy-value="sufianhaider.5555@gmail.com"
+                      data-copy-label="Copied email"
+                    >
+                      Copy
+                    </button>
+                  </div>
+
+                  <div class="contact-method-row">
+                    <div class="contact-method-meta">
+                      <span class="contact-label">PHONE / WHATSAPP</span>
+                      <a href="tel:+923069295637" class="contact-value tabular-nums">
+                        0306 9295637
+                      </a>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-quiet"
+                      data-copy-value="0306 9295637"
+                      data-copy-label="Copied phone"
+                    >
+                      Copy
+                    </button>
+                  </div>
+
+                  <div class="contact-method-row">
+                    <div class="contact-method-meta">
+                      <span class="contact-label">LINKEDIN</span>
+                      <a
+                        href="https://www.linkedin.com/in/sufian-haider-90a1a044a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-value"
+                      >
+                        linkedin.com/in/sufian-haider-90a1a044a
+                      </a>
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/sufian-haider-90a1a044a"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-quiet"
+                    >
+                      Visit
+                    </a>
+                  </div>
+
+                  <div class="contact-method-row">
+                    <div class="contact-method-meta">
+                      <span class="contact-label">GITHUB</span>
+                      <a
+                        href="https://github.com/sufianhaider"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-value"
+                      >
+                        github.com/sufianhaider
+                      </a>
+                    </div>
+                    <a
+                      href="https://github.com/sufianhaider"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-quiet"
+                    >
+                      Visit
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Validated Contact Form Card (7 Columns) -->
+            <article class="bento-card col-span-7 reveal">
+              <div>
+                <h3 class="card-heading">Quick Message</h3>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+                  Opens a pre-filled email to <strong style="color: var(--text-primary);">sufianhaider.5555@gmail.com</strong>.
+                </p>
+
+                <form id="contact-form" class="contact-form" novalidate>
+                  <div class="form-row-2">
+                    <div class="form-group">
+                      <label for="contact-name" class="form-label">
+                        <span>Name</span>
+                        <span style="color: var(--accent-cyan-bright);">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        class="form-input"
+                        placeholder="Your name"
+                        required
+                      />
+                      <span id="error-name" class="field-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="contact-email" class="form-label">
+                        <span>Email</span>
+                        <span style="color: var(--accent-cyan-bright);">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        class="form-input"
+                        placeholder="you@company.com"
+                        required
+                      />
+                      <span id="error-email" class="field-error" aria-live="polite"></span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-topic" class="form-label">Topic</label>
+                    <select id="contact-topic" name="topic" class="form-select">
+                      <option value="Data Science / Machine Learning Role">
+                        Data Science / Machine Learning Role
+                      </option>
+                      <option value="C++ / Software Engineering Opportunity">
+                        C++ / Software Engineering Opportunity
+                      </option>
+                      <option value="Freelance SQL, pandas & Excel Analytics">
+                        Freelance SQL, pandas &amp; Excel Analytics
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-message" class="form-label">
+                      <span>Message</span>
+                      <span style="color: var(--accent-cyan-bright);">*</span>
+                    </label>
+                    <textarea
+                      id="contact-message"
+                      name="message"
+                      class="form-textarea"
+                      placeholder="Brief details about the role or project..."
+                      required
+                    ></textarea>
+                    <span id="error-message" class="field-error" aria-live="polite"></span>
+                  </div>
+
+                  <div id="form-status-banner" class="form-status-banner" role="status">
+                    <span>Pre-filled email ready. You can also copy the message:</span>
+                    <button type="button" id="copy-inquiry-btn" class="btn btn-quiet">
+                      Copy Message
+                    </button>
+                  </div>
+
+                  <div style="display: flex; justify-content: flex-end;">
+                    <button type="submit" class="btn btn-primary">
+                      Send Email
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         DOCKED 4-STEP NAVIGATION RAIL (1. Experience -> 4. Connect)
+         ==================================================================== -->
+    <nav class="chapter-rail" aria-label="Portfolio Section Progress">
+      <a href="#experience" class="rail-step active" data-chapter-target="experience" aria-current="step">
+        <span class="step-idx">01</span>
+        <span data-i18n="rail.01">Experience</span>
+      </a>
+      <a href="#projects" class="rail-step" data-chapter-target="projects">
+        <span class="step-idx">02</span>
+        <span data-i18n="rail.02">Projects</span>
+      </a>
+      <a href="#academic-skills" class="rail-step" data-chapter-target="academic-skills">
+        <span class="step-idx">03</span>
+        <span data-i18n="rail.03">Academic Skills</span>
+      </a>
+      <a href="#connect" class="rail-step" data-chapter-target="connect">
+        <span class="step-idx">04</span>
+        <span data-i18n="rail.04">Connect</span>
+      </a>
+    </nav>
+
+    <!-- ====================================================================
+         FOOTER SECTION
+         ==================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div>
+          <a href="#hero" class="brand-wordmark">Sufian Haider .</a>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">
+            © 2026 Sufian Haider · BS Data Science (PAF-IAST) · Taxila, Pakistan
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer Quick Links">
+          <a href="https://github.com/sufianhaider" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/sufian-haider-90a1a044a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/obaidullah-miakhil" target="_blank" rel="noopener noreferrer">Mentor: Obaidullah Miakhil</a>
+          <a href="mailto:sufianhaider.5555@gmail.com">Email</a>
+          <a href="/assets/Sufian_Haider_CV.pdf" download="Sufian_Haider_CV.pdf">Download CV</a>
+        </nav>
+
+        <div>
+          <button
+            type="button"
+            id="back-to-top-btn"
+            class="btn btn-quiet"
+            aria-label="Scroll back to top"
+          >
+            Top ↑
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================================================================
+         INTERACTIVE CASE-STUDY MODAL DIALOG
+         ==================================================================== -->
+    <div
+      id="case-study-modal"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="modal-project-title"
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div>
+            <p id="modal-project-meta" class="section-kicker"></p>
+            <h2 id="modal-project-title" class="card-heading" style="margin-bottom: 0; margin-top: 0.25rem;"></h2>
+          </div>
+          <button
+            type="button"
+            id="modal-close-btn"
+            class="btn-icon"
+            aria-label="Close case study modal"
+          >
+            ✕
+          </button>
+        </div>
+
+        <div>
+          <p class="modal-section-title">SUMMARY</p>
+          <p id="modal-project-summary" style="font-size: 0.925rem; color: var(--text-secondary);"></p>
+        </div>
+
+        <div>
+          <p class="modal-section-title">KEY HIGHLIGHTS &amp; RESULTS</p>
+          <ul id="modal-project-responsibilities" class="responsibility-list"></ul>
+        </div>
+
+        <div>
+          <p class="modal-section-title">FULL ARCHITECTURE / CODE</p>
+          <pre id="modal-project-architecture" class="modal-architecture-box"></pre>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-hairline);">
+          <div class="meta-inline">
+            <span class="meta-highlight">Stack:</span>
+            <span id="modal-project-tools"></span>
+          </div>
+          <a href="#connect" class="btn btn-primary" onclick="document.getElementById('modal-close-btn').click()">
+            Contact About This Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accessible Toast Notification -->
+    <div id="toast-notification" class="toast-container" role="status" aria-live="polite"></div>
+
+    <!-- Vanilla ES6+ JavaScript Module -->
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "sufian-haider-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --port=3000 --host=0.0.0.0",
+    "clean": "rm -rf dist",
+    "lint": "node --check js/script.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "vite": "^8.3.0"
+  }
+}
