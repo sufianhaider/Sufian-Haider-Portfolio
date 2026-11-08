@@ -1,20 +1,14 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+🌐 Personal Data Science & AI Portfolio
+Welcome to the repository hosting my personal portfolio website, designed to showcase my projects, core competencies, and technical journey across Data Science, Machine Learning, and AI.
 
-# Run and deploy your AI Studio app
+🔗 Live Deployment: Visit Portfolio
 
-This contains everything you need to run your app locally.
+👨‍💻 Acknowledgments & Mentorship
+Special thanks and appreciation to Obaidullah Miakhil for invaluable mentorship, structural feedback, and steady technical guidance throughout the design and deployment of this portfolio.
 
-View your app in AI Studio: https://ai.studio/apps/542d2d84-3a43-4a03-8a23-4586984d2243
+🛠️ Built With
+Modern Responsive Web Stack / AI Studio
 
-## Run Locally
+Python & Data Science Tooling
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Git & GitHub
